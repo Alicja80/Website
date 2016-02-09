@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+	<title> My Webpage </title>
+	<link href="main.css" rel="stylesheet" />
+	<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript">
+
+	//preload images	
+	var slideimages = new Array()
+	slideimages[0]= new Image()
+	slideimages[0].src="http://www.airtoursclub.pl/files/inspiration_photo/big/1244.jpg" 
+	slideimages[1]= new Image()
+	slideimages[1].src="http://marcolimos.com/public/1294907892grapes.jpg"
+	slideimages[2]= new Image()
+	slideimages[2].src="http://images.forwallpaper.com/files/thumbs/preview/14/143550__barrels-grape-grapes-wine-white-wine-glasses_p.jpg"
+	
+	</script>
+</head>
+
+<style>
+body{
+	background-color: black;
+	text-align: center;
+	color: #959595; 
+}
+h1{
+
+	margin-top: 20px;
+	text-align: center;
+	margin-bottom: 15px;
+	background-color: transparent;
+	color: #FFFBC6;
+	padding: 15px;
+}
+.large_font{
+	font-size: 70px; font-weight: 400px;font-family: 'Cinzel Decorative', cursive; font-style: italic;margin-left: 45px; word-spacing: 0.5em;
+}
+.small_font{
+	font-size: 25px;font-style: italic;word-spacing: 0.4em;
+}
+
+h3{ text-align: left;margin-left: 10px; }
+ul{list-style-type: none; margin-left: 5px;}
+h2{font-size: 30px; font-weight: 200px;
+	color:  #959595;
+	margin-left: 190px;
+	text-align: left;
+	background-color: #840045;
+	padding: 10px;
+	word-spacing: 0.3em;}
+h4{font-size: 25px; font-weight: 200px;
+	color: #840045;
+	margin-left: 190px;
+	text-align: left;
+	word-spacing: 0.3em;}
+
+p{
+	width: 600px;
+	text-align: left;
+	margin-left: 195px;
+	margin-top: 30px;
+	font-size: 16px;
+}
+
+
+</style>
+
+<body>
+	<h1>
+	<span class="large_font">
+		World Wine
+	</span>
+	<span class="small_font">
+		for passionate and hobbyists
+	</h1>
+	
+	<div id="wrapper">
+		<div id="nav">
+			<ul>
+				<li><a href="index.html">Home </a></li> 
+				<li>Wine</li>
+				<li><a href="Contact.html">Contact</a></li> 
+			</ul>
+		</div>
+	</div>
+	<img src="http://www.airtoursclub.pl/files/inspiration_photo/big/1244.jpg" id="slide" width="800" height="250"  >
+
+	<script type="text/javascript">
+		
+	var step=0;
+
+	function slideit(){
+	if (!document.images)
+  	return
+ 	document.getElementById('slide').src = slideimages[step].src
+
+	if(step<2)
+		step++
+	else
+		step=0
+	setTimeout("slideit()",2500);
+	}
+	slideit()
+		
+	</script>
+
+	<div id="container">
+		<div id="navigation">
+			<h3>Links</h3>
+				<ul>
+					<li>FRANCE</li>
+					<li><a href="http://www.bordeaux.com/uk/wines/selection">Bordeaux </a></li> 
+					<li><a href="http://www.winespectator.com/magazine/show/id/2005-Red-Burgundy-Alphabetical-Listing_4094">Burgundy</a></li>	
+					<li><a href="http://www.wineanorak.com/tfrance_Champagne.htm">Champagne</a></li><br>
+					<li>ITALY</li>
+					<li><a href="http://www.agricoltura.regione.lombardia.it/shared/ccurl/34/664/Vini%202012%20INGLESE.pdf">Lombardia</a></li>
+					<li><a href="http://www.cellartours.com/italy/italian-wine-regions/piedmont.html">Piedmont</a></li> 
+					<li><a href="http://www.charmingitaly.com/article/top-5-wines-of-campania">Campania</a></li><br>
+					<li>SPAIN</li>
+					<li><a href="http://forgetburgundy.com/2012/04/30/757/">Riberta Del Duero</a></li>
+					<li><a href="http://www.spanish-wines.org/best-spanish-wines.html">Andalusia and other regions</a></li> 
+				</ul>
+
+		</div>
+
+		<div id="mainBody">
+			<div class="header">
+			
+				<h2> Wine </h2>
+			</div>
+		
+			<h4>France ________________________________________________________________________________</h4>
+			
+			<img src="http://blog.wine-tours-france.com/Portals/6/Picture1.png" width="450" height="320" float="right" style="float:right;clear=right; margin-left:5px; margin-bottom: 5px;"  />
+
+			<p>France is one of the largest wine producers in the world. French wine traces its history to the 6 th century BC, with many of France's regions dating their wine-making history to Roman times. The wines produced range from expensive high-end wines sold internationally to more modest wines usually only seen within France.
+
+				France is the source of many grape varieties (Cabernet Sauvignon, Chardonnay, Pinot noir, Sauvignon blanc, Syrah) that are now planted throughout the world, as well as wine-making practices and styles of wine that have been adopted in other producing countries. 
+				Most varieties of grape are primarily associated with a certain region, such as Cabernet Sauvignon in Bordeaux and Syrah in Rhône, although there are some varieties that are found in two or more regions, such as Chardonnay in Bourgogne (including Chablis) and Champagne, and Sauvignon blanc in Loire and Bordeaux. As an example of the rules, although climatic conditions would appear to be favorable, no Cabernet Sauvignon wines are produced in Rhône, Riesling wines in Loire, or Chardonnay wines in Bordeaux. (If such wines were produced, they would have to be declassified to Vin de Pays or French table wine. They would not be allowed to display any appellation name or even region of origin.</p>
+
+			<br><h4> Italy _____________________________________________</h4></br>
+
+			<img src="http://www.vindulgeblog.com/wp-content/uploads/2013/05/Italy_Map-osia.org_.gif" width="450" height="320" style="float:right; margin top:10px;" />
+			
+
+			<p>Italy is home to some of the oldest wine-producing regions in the world, and Italian wines are known worldwide for their broad variety. Italy, closely followed by France, is the largest wine producer by volume.<br> Other notable wines that in the latest years gain much attention in the international markets and among specialists are: Amarone della Valpolicella, Prosecco di Conegliano- Valdobbiadene, Taurasi from Campania, Franciacorta sparkling wines from Lombardy; evergreen wines are Chianti and Soave, while new wines from the Centre and South of Italy are quickly gaining recognition: Sagrantino, Primitivo, Nero D'Avola among others. The Friuli-Venezia Giulia is world famous for the quality of her white wines, like Pinot Grigio. Special sweet wines like Passitos and Moscatos, made in different regions, are also famous since old time. 
+				</p>
+			<br><h4>Spain ____________________________________________</h4><br/> 
+
+			
+			<img src="http://www.spanishwine.com/wp-content/uploads/2010/02/wine_spainmap.gif" width="490" height="380" style="float: right; clear: right; margin-top: 10px;" />
+			
+
+			<p>Major Spanish wine regions include the Rioja and Ribera del Duero which are known for their Tempranillo production; Valdepenas, drunk by Unamuno and Hemingway, known for high quality tempranillo at low prices; Jerez, the home of the fortified wine Sherry; Rias Baixas in the northwest region of Galicia that is known for its white wines made from Albarino and Catalonia which includes the Cava and still wine producing regions of the Penedes as well the Priorat region.
+			Major Spanish wine regions include the Rioja and Ribera del Duero which are known for their Tempranillo production; Valdepenas, drunk by Unamuno and Hemingway, known for high quality tempranillo at low prices; Jerez, the home of the fortified wine Sherry; Rias Baixas in the northwest region of Galicia that is known for its white wines made from Albarino and Catalonia which includes the Cava and still wine producing regions of the Penedès as well the Priorat region.</p>
+	</div>
+</body>

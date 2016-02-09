@@ -1,0 +1,61 @@
+
+
+#wrapper{
+	width: auto;
+	margin: auto;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bolder;
+	padding: 0px;
+}
+#nav ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#nav ul li{
+	display: inline-block;
+	letter-spacing: 3px;
+	word-spacing: 5px;
+}
+#nav ul li:hover{
+	background-color:#A0A0A0;
+
+}
+#nav ul li a{
+	display: block;
+	padding: 10px;
+	color: #980034;
+	text-decoration:none; 
+	text-align: left;
+}
+#nav ul li a:hover{ color: pink;}
+
+
+
+#nav ul li:hover > ul{ display: block; }
+#nav ul ul{display: none; position: absolute; background-color:#C2C2C2 ; min-width: 150px;}
+#nav ul ul li{ display:block;}
+
+#navigation{
+	width: 180px; display: list-item; float: left; background-color: #121212; text-align: left;margin-bottom: 10px;
+	 margin-top: 25px;
+}
+#navigation ul{
+	list-style-type: none; padding: 0px;
+}
+#navigation ul li a{ color: #840045;font-family: Century 'Gothic', sans-serif; text-decoration: none; padding: 5px; margin: 10px; font-size: 16px;
+ font-weight: bolder; line-height: 35px;}
+
+#navigation ul li a:hover{text-decoration: underline;}
+
+.contact.cf{background-color:#840045; height: 100%; }
+
+.contact.form{ margin-right: 20px; float: left;}
+
+
+
+
+
+
+

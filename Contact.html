@@ -1,0 +1,155 @@
+<html>
+<head>
+	<title> My Webpage </title>
+	<link href="main.css" rel="stylesheet" />
+	<link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
+</head>
+
+<style>
+body{
+	
+	background-color: black;
+	text-align: center;
+	color: #959595; 
+}
+h1{
+
+	margin-top: 20px;
+	text-align: center;
+	margin-bottom: 15px;
+	background-color: transparent;
+	
+	padding: 15px;
+}
+.large_font{
+	font-size: 70px; font-weight: 400px;font-family: 'Cinzel Decorative', cursive; font-style: italic;margin-left: 45px; word-spacing: 0.5em;color:#FFFBC6;
+}
+.small_font{
+	font-size: 25px;font-style: italic;word-spacing: 0.4em;color: #FFFBC6;
+}
+
+h3 {text-align: left; font-family: Georgia, serif; font-style: italic; word-spacing: 0.2em; margin-left: 15px; padding: 25px;}
+	ul{
+		list-style-type: none;
+	}
+	form ul{ list-style-type: none; text-align:left;
+
+	}
+	form ul li{margin: 15px; padding-top: 10px; font-weight: bolder; color: #ACACAC;
+
+	}
+	form label{ display: block; margin: 5px; 
+	}
+	form input, textarea,{ font-size: 2em; padding: 10px; 
+	}
+	span, h4{color: #ACACAC}
+</style>
+
+<body>
+<?php
+
+$to = 'zxe@.o2.pl';
+$subject = 'this came from your friend';
+
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+
+$message = <<<Email
+
+Hi, my name is $name.
+
+$message
+
+From $name
+Oh ya, my email is $email
+
+Email;
+
+$header ="From: $email";
+
+
+if($_POST){
+	if($name=='' || $email=='' || $message==''){
+		$feedback = 'fill out all fields';
+
+	}else{
+		mail($to, $subject, $message, $header);
+	$feedback = 'Thank you for your message';
+
+	}
+}
+?>
+
+	<h1>
+	<span class="large_font">
+		World Wine
+	</span>
+	<span class="small_font">
+		for passionate and hobbyists
+	</h1>
+	
+	<div id="wrapper">
+		<div id="nav">
+			<ul>
+				<li><a href="index.html">Home </a></li> 
+				<li><a href="Wine.html">Wine</a> 
+				<li>Contact</li> 
+			</ul>
+		</div>
+	</div>
+	<!--Contact-->
+	
+	<div class="contact cf"> 
+		<div class="header"> 
+			<h3> Contact Us</h3>
+		</div>
+		<div class="main cf">
+				<div class="contact form">
+					<p id="feedback"><?php echo $feedback; ?></p>
+						<form action="?" method="post">
+				<ul>
+					<li>
+						<label for="name"> Name:</label>
+						<input type="text" name="name" id="name" size="40" />
+					</li>
+					<li>
+						<label for="email">E-mail:</label>
+						<input type="text" name="email" id="email" size="40" />
+					</li>
+					<li>
+						<label for="message">Comments:</label>
+						<textarea id="message" name="message" cols="40" rows="10" ></textarea >
+					</li>
+					<li>
+						<input type="submit" id="btn" value="Send" />
+					</li>	
+				</ul>
+			</form>	
+				</div>
+				<div class="content">
+					<div id="local">
+						
+							<h4>Wine Gallery</h4>
+							<p itemgroup="Adress">
+								<span itemgroup="streetAddress">3 Nathan Street</span>
+										<br>
+								<span itemgroup="postalCode">SE2 3YH </span>
+								<span itemgroup="addressLocality">London</span>
+								<br>
+								<span itemgroup="addressCountry">United Kingdom</span>
+								<br>
+								<span itemgroup="telephone">Phone:+44(0) 20 1234 5678</span>
+							</p>
+					</div>
+				</div>
+				<div class="map container">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.474308419594!2d-0.18426400000000445!3d51.48616300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760563a89286e9%3A0x825bb90e77d79568!2sThe+Wine+Gallery!5e0!3m2!1sen!2suk!4v1432318022621" width="350" height="200" frameborder="0" style="border:0"></iframe>
+				</div>
+			</div> 
+		</div> 
+
+				
+	</div>
+</body>
+</html>
